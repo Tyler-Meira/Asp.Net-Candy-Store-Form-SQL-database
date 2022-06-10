@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mint.Master.cs" Inherits="Lab03.CandyCastle" %>
+
+<!DOCTYPE html>
+
+<!-- 
+    Lab03
+    
+    Candy Castle Website
+    
+    
+    -->
+
+<html>
+<head runat="server">
+    <title></title>
+   
+    <style type="text/css">
+        table{
+            background-color:gainsboro;
+        }
+        .bodyContent {
+            width: 2186;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 300px;
+        }
+        .auto-style6 {
+            height: 642px;
+
+        }
+        .auto-style7 {
+            width: 138px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="height: 322px">
+    <form id="form1" runat="server">
+
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style3" colspan="2" style="background-color: #a9d2c4; text-align:center;">
+                    
+                    <asp:Image ID="Image1" runat="server" Height="309px" ImageUrl="~/imgs/mint.jpg" Width="1295px" BorderStyle="None" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style7" style="vertical-align:top; background-color: darkgrey; padding-top: 2%">
+                    <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/MintHome.aspx" BorderColor="Black" BorderStyle="None" ForeColor="#A9D2C4">Home Page</asp:HyperLink><br />
+                    <asp:HyperLink ID="Form" runat="server" NavigateUrl="~/MintForm.aspx" BorderColor="Black" BorderStyle="None" ForeColor="#A9D2C4">Form Page</asp:HyperLink>
+                </td>
+
+                <td class="auto-style6" style="vertical-align:top; float:left;">
+                    <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+
+        
+
+
+        
+
+    </form>
+    
+</body>
+</html>
